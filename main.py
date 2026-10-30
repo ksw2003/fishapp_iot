@@ -11,12 +11,9 @@ from waterPump import run_water_change
 from feeder import run_feeding
 
 DEVICE_ID = "SS501"
-SERVER_WS = "ws://13.239.199.189:3000"
+SERVER_WS = <websocket server>
 
-
-# --------------------
 # 센서 전송
-# --------------------
 def sensor_loop():
 
     print("수질/수온 모니터링 시작")
@@ -43,9 +40,7 @@ def sensor_loop():
         time.sleep(2)
 
 
-# --------------------
 # 웹소켓
-# --------------------
 def on_open(ws):
 
     print("AWS 연결 성공")
@@ -135,9 +130,7 @@ def websocket_loop():
         time.sleep(5)
 
 
-# --------------------
 # 시작
-# --------------------
 if __name__ == "__main__":
 
     threading.Thread(
