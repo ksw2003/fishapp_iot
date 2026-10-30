@@ -1,6 +1,6 @@
 import requests
 
-SERVER = "http://13.239.199.189:3000"
+SERVER = <AWS server>
 DEVICE_ID = "SS501"
 
 def send_sensor_data(temperature, water_quality):
