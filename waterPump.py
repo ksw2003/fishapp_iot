@@ -2,10 +2,9 @@ import RPi.GPIO as GPIO
 import time
 import requests
 from datetime import datetime
-from sensorAPI import SERVER
+from config import SERVER, DEVICE_ID
 
 SERVER_URL = f"{SERVER}/api/tank/water-change-log"
-DEVICE_ID = "SS501"
 
 DRAIN_RELAY = 6
 FILL_RELAY = 16

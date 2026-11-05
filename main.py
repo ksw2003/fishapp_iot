@@ -3,6 +3,7 @@ import json
 import threading
 import websocket
 
+from config import SERVER_WS, DEVICE_ID
 from waterQuality import read_tds
 from temperature import read_temp
 from sensorAPI import send_sensor_data
@@ -10,8 +11,6 @@ from sensorAPI import send_sensor_data
 from waterPump import run_water_change
 from feeder import run_feeding
 
-DEVICE_ID = "SS501"
-SERVER_WS = "ws://13.239.199.189:3000"
 
 
 # --------------------

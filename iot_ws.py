@@ -6,9 +6,7 @@ import websocket
 from waterPump import run_water_change
 from feeder import run_feeding
 from sensorAPI import send_sensor_data
-
-SERVER_WS = "ws://13.239.199.189:3000"
-DEVICE_ID = "SS501"
+from config import SERVER_WS, DEVICE_ID
 
 
 # ----------------------------

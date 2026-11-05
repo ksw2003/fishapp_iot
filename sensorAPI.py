@@ -1,7 +1,5 @@
 import requests
-
-SERVER = "http://13.239.199.189:3000"
-DEVICE_ID = "SS501"
+from config import SERVER, DEVICE_ID
 
 def send_sensor_data(temperature, water_quality):
 
