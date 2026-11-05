@@ -1,0 +1,13 @@
+[Unit]
+Description=MediaMTX RTSP Server
+After=network.target
+
+[Service]
+User=fish
+WorkingDirectory=/home/fish
+ExecStart=/home/fish/mediamtx /home/fish/mediamtx.yml
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
