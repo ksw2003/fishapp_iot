@@ -5,7 +5,7 @@ Raspberry Pi 기반 IoT 시스템으로 수온 및 수질 측정과 원격 먹�
 
 🔗 **통합 프로젝트 저장소:** [관상어용 스마트 어항 시스템](https://github.com/ksw2003/fishapp_main)
 
-### 📁 프로젝트 구조
+## 📁 프로젝트 구조
 
 ```text
 streaming/
@@ -30,7 +30,7 @@ iot/
 └── waterQuality.py       # 수질 데이터 측정 및 처리
 ```
 
-### 🛠 기술 스택 //피더모터 추가해야함
+## 🛠 기술 스택
 | 기술 스택 | 설명|
 |:---:|:---:|
 | Raspberry Pi 3 Model B (1GB RAM) | IoT 센서 및 장치 제어, 실시간 영상 스트리밍 |
@@ -41,6 +41,7 @@ iot/
 | SZH-TSM002 | TDS 기반 수질 측정 |
 | Float Switch | 어항 수위 감지 |
 | Arduino Water Pump | 어항 환수를 위한 워터 펌프 |
+| DS04-NFC | 급여를 위한 서보모터 |
 | MediaMTX | RTSP 기반 실시간 영상 스트리밍 |
 | FFmpeg | Raspberry Pi에서 AWS EC2로 영상 중계 |
 | systemd | 영상 송출 및 중계 서비스 자동 실행 |
