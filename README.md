@@ -120,9 +120,9 @@ MediaMTX는 [공식 GitHub 저장소](https://github.com/bluenviron/mediamtx)에
 `streaming/.env.example`을 참고하여 `/home/fish/aws-relay/.env` 파일을 생성합니다.
 
 ```dotenv
-AWS_PUBLIC_IP=YOUR_AWS_PUBLIC_IP
-RTSP_USER=fishpublisher
-RTSP_PASSWORD=YOUR_RTSP_PASSWORD
+AWS_PUBLIC_IP= <YOUR_AWS_PUBLIC_IP>
+RTSP_USER= <FISHPUBLISHER>
+RTSP_PASSWORD= <YOUR_RTSP_PASSWORD>
 ```
 
 AWS EC2의 MediaMTX 서버에 설정된 RTSP 인증 정보를 입력합니다.
