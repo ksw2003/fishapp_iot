@@ -1,0 +1,16 @@
+[Unit]
+Description=AI Aquarium AWS RTSP Relay
+After=network-online.target mediamtx.service
+Wants=network-online.target
+Requires=mediamtx.service
+
+[Service]
+Type=simple
+User=fish
+WorkingDirectory=/home/fish/aws-relay
+ExecStart=/home/fish/aws-relay/relay.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
