@@ -11,8 +11,8 @@ FILL_RELAY = 16
 FEEDER_PIN = 18
 FLOAT_PIN = 25  # 플로트 스위치
 
-DRAIN_TIME = 5 #어항>물통
-FILL_TIME = 5 #물통>어항
+DRAIN_TIME = 120 #어항>물통
+FILL_TIME = 600 #물통>어항
 
 feeder_pwm = None
 
