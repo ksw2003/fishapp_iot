@@ -16,7 +16,7 @@ def run_feeding():
         print("먹이 배급 시작")
 
         pwm.ChangeDutyCycle(10)
-        time.sleep(3)
+        time.sleep(5)
 
         pwm.ChangeDutyCycle(7.5)
 
